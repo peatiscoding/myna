@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "private": true,
+  "module": "./dist/main.js",
+  "scripts": {
+    "build": "tsup ./src/main.ts --format esm --clean",
+    "dev": "tsx -r dotenv/config src/main.ts"
+  },
+  "dependencies": {
+    "langchain": "^0.0.174"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "dotenv": "^16.0.3",
+    "prettier": "^3.0.3",
+    "tsup": "^7.2.0",
+    "tsx": "^3.12.3",
+    "tsconfig-paths": "^3.14.2",
+    "typescript": "^5.2.2"
+  }
+}
