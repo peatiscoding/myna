@@ -13,7 +13,7 @@ const llm = new OpenAI({
   temperature: 0.9,
 })
 const chatModel = new ChatOpenAI({
-	openAIApiKey: config.openAI.key,
+  openAIApiKey: config.openAI.key,
 })
 
 // Intercept inputs
