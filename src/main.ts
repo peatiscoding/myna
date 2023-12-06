@@ -48,7 +48,7 @@ const inputs = {
 }
 const response = await chain.invoke(inputs)
 
-console.log('Respons', response.content)
+console.log('Response', response.content)
 // Output
 await memory.saveContext(inputs, {
   output: response.content,
